@@ -1,0 +1,192 @@
+body {
+    font-family:"Open Sans",Arial, Helvetica, sans-serif;
+}
+
+
+.bg-black {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+.bg-deep-black {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.custom-dropdown {
+    width: 90px;
+}
+
+.opacity-50 {
+    opacity: .5;
+}
+
+.opacity-70 {
+    opacity: .7;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.fs-14-lg-38 {
+    font-size: 14px;
+} 
+
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.custom-carousel-control-prev, .custom-carousel-control-next {
+    position: absolute;
+    background-color: transparent;
+    color:white;
+    border: none;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    transition: opacity .5s;
+}
+
+.custom-carousel-control-prev:hover, .custom-carousel-control-next:hover {
+    opacity: 1;
+}
+
+.custom-carousel-control-prev {
+    left: 0;
+}
+
+.custom-carousel-control-next {
+    right: 0;
+}
+
+
+.custom-carousel-control-prev > i, .custom-carousel-control-next > i {
+    font-size: 2.5rem;
+}
+
+.zoom {
+    z-index: 0;
+    transition: all .2s;
+    transition-delay: .3s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.section {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#trending {
+    animation-delay: 1s;
+}
+
+#watch-again {
+    animation-delay: 2s;
+}
+
+#new-releases {
+    animation-delay: 3s;
+}
+
+.search-box {
+    display: none;
+    width: 16rem;
+    height: 6rem;
+    left: -4rem;
+}
+
+.search-box-active {
+    display: block;
+    opacity: 1;
+    top: 0;
+    z-index: 3;
+    animation-name: searchbox-fade-in;
+    animation-duration: .5s;
+}
+
+.search-box-deactive {
+    display: block;
+    top: -30px;
+    opacity: 0;
+    animation-name: searchbox-fade-out;
+    animation-duration: .5s;
+}
+
+
+
+a, a:hover, a:focus,
+.btn-link:hover, .btn:focus,
+.btn:active, .btn:focus-visible {
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+}
+
+input[type="text"], input[type="text"]:hover, input[type="text"]:focus, 
+input[type="text"]:active, input[type="text"]:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes searchbox-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 3;
+    }
+}
+
+@keyframes searchbox-fade-out {
+    0% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+        z-index: 3;
+    }
+}
+
+
+@media (min-width:992px) {
+    .fs-14-lg-38 {
+        font-size: 38px;
+    }
+}
+
