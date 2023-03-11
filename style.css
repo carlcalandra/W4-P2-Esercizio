@@ -44,11 +44,6 @@ body {
     overflow: visible;
 }
 
-.row {
-    margin-right: 0;
-    margin-left: 0;
-}
-
 .custom-carousel-control-prev, .custom-carousel-control-next {
     position: absolute;
     background-color: transparent;
